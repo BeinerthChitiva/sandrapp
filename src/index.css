@@ -27,3 +27,32 @@ code {
 div {
   font-family: "Open Sans";
 }
+
+.hover-animate-div {
+  position: relative;
+  background-color: white; /* Original background color */
+  overflow: hidden;
+  transition: background-color 0.5s ease; /* Transition for the background color change */
+}
+
+.hover-animate-div::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Start from the top */
+  left: 0;
+  right: 0;
+  height: 0%; /* Initially, the pseudo-element doesn't cover anything */
+  background-color: rgb(229, 231, 235); /* The color you want to transition to */
+  z-index: 0; /* Ensure it's below the content */
+  transition: height 0.5s ease; /* Animation speed */
+}
+
+.hover-animate-div:hover::before {
+  height: 100%; /* On hover, the pseudo-element covers the entire div */
+}
+
+/* Ensure content inside the div is positioned above the pseudo-element */
+.hover-animate-div > * {
+  position: relative;
+  z-index: 1;
+}

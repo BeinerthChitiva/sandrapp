@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function HeaderOut({
-    title = "Bienvenido a Nuevos Territorios 2024",
+export default function HelsinkiHero({
+    title = "Helsinki",
     description = "",
     buttonLabel = ""
 }){
@@ -22,7 +22,7 @@ export default function HeaderOut({
 
     const backgroundImage = isMobile
         ? "/assets/images/banner_hero_mobile5.jpg"
-        : "/assets/images/banner_hero_desktop5.jpg"
+        : "/assets/images/banner_hero_desktop7.jpg" 
 
     return(
         <Fragment>

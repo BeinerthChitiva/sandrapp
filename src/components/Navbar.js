@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-// import useVerticalScroll from "../../hooks/useVerticalScroll";
 import useVerticalScroll from "../hooks/useVerticalScroll"
+
+const sandraLogo = "/assets/images/ntLogoV2.jpg"
 
 export default function Navbar(){
     const scrollY = useVerticalScroll()
@@ -15,10 +16,10 @@ export default function Navbar(){
                     top: scrollY > 700 ? "700px" : "0"
                 }}
             >
-                <Link to="/home"><div className="font-BNPPSansBold text-[30px]">Sandrapp</div></Link>
-                <div>
-                    <Link to="/inicia-sesion">Iniciar Sesión</Link>
-                    <Link to="/registrate">Regístrate</Link>
+                <Link to="/home"><div className="font-BNPPSansBold text-[30px]"><img src={sandraLogo} alt="sandraLog" className="max-h-[70px]"/></div></Link>
+                <div className="flex flex-row gap-5">
+                    <Link to="/projects/helsinki/urbanismo">Helsinki</Link>
+                    <Link to="/projects/tierrabomba">Tierra Bomba</Link>
                 </div>
             </header>
         </Fragment>
