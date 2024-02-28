@@ -3,6 +3,8 @@ import HeaderOut from "../components/HeaderOut";
 import ProjectDivider from "../components/ProjectDivider";
 import HeaderOutBaru from "../components/HeaderOutBaru";
 import HelsinkiHero from "../components/HelsinkiHero";
+import Flipbook from "../components/Flipbook";
+import Cardholder from "../components/Cardholder";
 
 export default function PageHomeOut(){
     return(
@@ -11,6 +13,8 @@ export default function PageHomeOut(){
             <ProjectDivider/>
             <HelsinkiHero/>
             <HeaderOutBaru/>
+            <Cardholder/>
+            <Flipbook/>
         </Fragment>
     )
 }
