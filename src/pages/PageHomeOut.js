@@ -5,6 +5,7 @@ import HeaderOutBaru from "../components/HeaderOutBaru";
 import HelsinkiHero from "../components/HelsinkiHero";
 import Flipbook from "../components/Flipbook";
 import Cardholder from "../components/Cardholder";
+import BaruHero from "../components/BaruHero";
 
 export default function PageHomeOut(){
     return(
@@ -12,7 +13,7 @@ export default function PageHomeOut(){
             <HeaderOut/>
             <ProjectDivider/>
             <HelsinkiHero/>
-            <HeaderOutBaru/>
+            <BaruHero/>
             <Cardholder/>
             <Flipbook/>
         </Fragment>

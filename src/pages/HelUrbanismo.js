@@ -15,7 +15,7 @@ export default function HelUrbanismo(){
         autoplay: true,
         autoplaySpeed: 3000
     };
-    const documentUrl = "https://docs.google.com/document/d/1vlNb9zrYL3BgH0yHGB4zj9HZDIiwqlYdu1xtu6gON5k/edit?usp=sharing"
+    const documentUrl = "https://docs.google.com/document/d/1vlNb9zrYL3BgH0yHGB4zj9HZDIiwqlYdu1xtu6gON5k/view"
     return(
         <>
             <div className="flex flex-col">
@@ -35,8 +35,7 @@ export default function HelUrbanismo(){
                             title="Google Docs Viewer"
                             width="100%"
                             height="100%"
-                            frameBorder="0"
-                            scrolling="no"
+                            className='border border-black'
                         ></iframe>
                     </div>
                 </div>

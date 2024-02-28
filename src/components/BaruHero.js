@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function HelsinkiHero({
-    title = "Helsinki",
+export default function BaruHero({
+    title = "Baru - Cartagena",
     description = "",
     buttonLabel = ""
 }){
@@ -22,7 +22,7 @@ export default function HelsinkiHero({
 
     const backgroundImage = isMobile
         ? "/assets/images/banner_hero_mobile5.jpg"
-        : "/assets/images/banner_hero_desktop7.jpg" 
+        : "/assets/images/banner_hero_desktop8.webp"
 
     return(
         <Fragment>
